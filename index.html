@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Simple Omelette Recipe</title>
+    <style>
+        /* CSS styles will be inserted here */
+    /* Reset and base styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f3ed;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    /* Header styles */
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .recipe-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .recipe-image:hover {
+        transform: scale(1.05);
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #2c1810;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    /* Section styles */
+    section {
+        padding: 20px;
+        border-top: 1px solid #e0d5c9;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #2c1810;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    /* Preparation time styles */
+    .preparation-time {
+        background-color: #fff0eb;
+    }
+
+    /* Nutrition table styles */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #e0d5c9;
+    }
+
+    td:first-child {
+        font-weight: bold;
+    }
+
+    /* Responsive styles */
+    @media (min-width: 768px) {
+        body {
+            padding: 40px;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .description {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .container {
+        animation: fadeIn 1s ease-out;
+    }
+
+    li {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    li:nth-child(1) { animation-delay: 0.1s; }
+    li:nth-child(2) { animation-delay: 0.2s; }
+    li:nth-child(3) { animation-delay: 0.3s; }
+    li:nth-child(4) { animation-delay: 0.4s; }
+    li:nth-child(5) { animation-delay: 0.5s; }
+    li:nth-child(6) { animation-delay: 0.6s; }
+
+     .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/images/image-omelette.jpeg" alt="Omelette" class="recipe-image">
+            <h1>Simple Omelette Recipe</h1>
+            <p class="description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        </header>
+
+        <section class="preparation-time">
+            <h2>Preparation time</h2>
+            <ul>
+                <li><strong>Total:</strong> Approximately 10 minutes</li>
+                <li><strong>Preparation:</strong> 5 minutes</li>
+                <li><strong>Cooking:</strong> 5 minutes</li>
+            </ul>
+        </section>
+
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2-3 large eggs</li>
+                <li>Salt, to taste</li>
+                <li>Pepper, to taste</li>
+                <li>1 tablespoon of butter or oil</li>
+                <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+            </ul>
+        </section>
+
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+                <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+                <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+                <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+                <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+                <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+            </ol>
+        </section>
+
+        <section class="nutrition">
+            <h2>Nutrition</h2>
+            <p>The table below shows nutritional values per serving without the additional fillings:</p>
+            <table>
+                <tr>
+                    <td>Calories</td>
+                    <td>277kcal</td>
+                </tr>
+                <tr>
+                    <td>Carbs</td>
+                    <td>0g</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>20g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>22g</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript will be inserted here
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Highlight ingredients when clicked
+        const ingredients = document.querySelectorAll('.ingredients li');
+        ingredients.forEach(ingredient => {
+            ingredient.addEventListener('click', () => {
+                ingredient.classList.toggle('highlight');
+            });
+        });
+
+        // Add smooth scrolling to instruction steps
+        const instructionSteps = document.querySelectorAll('.instructions li');
+        instructionSteps.forEach(step => {
+            step.addEventListener('click', () => {
+                step.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+
+        // Add hover effect to nutrition table rows
+        const nutritionRows = document.querySelectorAll('.nutrition table tr');
+        nutritionRows.forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.backgroundColor = '#fff0eb';
+            });
+            row.addEventListener('mouseleave', () => {
+                row.style.backgroundColor = '';
+            });
+        });
+    });
+
+    </script>
+
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Hackerbot24">Hackerbot24</a>.
+  </div>
+</body>
+</html>
